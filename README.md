@@ -61,7 +61,7 @@ on:
 jobs:  
   check-update:  
     # Always pin to @main to get the latest logic, but the content version is controlled by your .yaml file  
-    uses: canonical/copilot-collections/.github/workflows/auto_update-collections.yaml@main  
+    uses: canonical/copilot-collections/.github/workflows/auto_update_collections.yaml@main  
     with:  
       config_file: ".collections-config.yaml"  
     secrets: inherit

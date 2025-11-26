@@ -50,7 +50,7 @@ process_collection() {
     count=$(yq ".${col_name}.items | length" "$MANIFEST_FILE")
 
     if [ "$count" -gt 0 ]; then
-        for ((i=0; i<$count; i++)); do
+        for ((i=0; i<count; i++)); do
             local src dest
             src=$(yq ".${col_name}.items[$i].src" "$MANIFEST_FILE")
             dest=$(yq ".${col_name}.items[$i].dest" "$MANIFEST_FILE")
