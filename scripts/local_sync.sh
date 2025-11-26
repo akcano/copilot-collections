@@ -9,7 +9,7 @@ NC='\033[0m' # No Color
 
 CONFIG_FILE=".collections-config.yaml"
 TOOLKIT_REPO="https://github.com/canonical/copilot-collections.git"
-TEMP_DIR=$(mktemp -d -t copilot-toolkit-XXXXXX)
+TEMP_DIR="$(pwd)/copilot-toolkit-temp"
 
 cleanup() {
     rm -rf "$TEMP_DIR"
