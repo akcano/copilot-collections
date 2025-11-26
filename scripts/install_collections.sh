@@ -60,13 +60,9 @@ process_collection() {
 
             echo "      - Installing $src -> $dest"
             mkdir -p "$(dirname "$dest")"
-
-            # Overwrite with header
-            echo "" > "$dest"
             
-            # Append content
             if [ -f "$full_src" ]; then
-                cat "$full_src" >> "$dest"
+                cat "$full_src" > "$dest"
             else
                 echo "      ❌ Error: Source file missing: $full_src"
                 exit 1
