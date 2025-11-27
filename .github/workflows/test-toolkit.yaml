@@ -46,7 +46,7 @@ jobs:
             exit 1
           fi
           
-          if [ ! -f ".github/instructions/charm-libraries.instructions.md" ]; then
+          if [ ! -f ".github/instructions/charms-lib-updates.instructions.md" ]; then
             echo "❌ Failed to generate charm instructions"
             exit 1
           fi
