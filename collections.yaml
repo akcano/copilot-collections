@@ -38,6 +38,4 @@ pfe-charms:
   description: "Platform Engineering Charm Development Collection"
   includes:
     - charm-python
-  items:
-    - src: assets/instructions/documentation/release-notes.instructions.md
-      dest: .github/instructions/release-notes.instructions.md
+  items: []
