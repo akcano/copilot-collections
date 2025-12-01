@@ -1,6 +1,6 @@
 ---
 description: 'Guidelines for documentation-related suggestions.'
-applyTo: 'docs/**/*.md, docs/**/*.rst'
+applyTo: 'docs/**/*.md'
 ---
 
 # Documentation instructions for GitHub Copilot
@@ -86,8 +86,27 @@ concisely summarize the real-world problem addressed by the document.
 How-to guides should contain at least one CLI command that user can run to address the
 problem or achieve the goal.
 
+## Tests & CI
+
+The CI expects documentation to pass `vale` and `lychee`; address reported issues rather than silencing the tools.
+
+### Linting & checks (how to run)
+
+Run the docs linters via the top-level Makefile targets: `make docs-check` (this runs `vale` and `lychee`).
+
 ## Style guide pointers
 
 - **Spelling**: Use US English for spelling suggestions.
 - **Headings**: Use sentence case for headings. Avoid punctuation in headings. Do not skip levels in heading hierarchy.
-- **Code examples**: Do not use prompt marks (for example, `$` or `#`) in code examples. Do not use comments in code examples; instead, put any comments directly into the text. Whenever possible, split up multiple commands into separate code blocks and provide explanations in between the code blocks.
+- **Code examples**: Do not use prompt marks (for example, `$` or `#`) in code examples. Do not use comments in code examples; instead, put any comments directly into the text. Whenever possible, split up multiple commands into separate code blocks and provide explanations in between the code blocks. Use Git-flavoured Markdown with fenced code blocks (```) and command examples as shell blocks.
+
+## Small-edit rules for AI agents
+
+- Preserve existing link targets and code samples formatting. If you change any heading filename or path, update all relative links in `docs/` accordingly.
+- Do not change `docs/index.md` structure without updating the numeric Contents list — keep the order and paths in sync with files under `docs/`.
+- When adding a new page in one of the folders of `docs`, add a short entry in the landing page if there's a landing page in the folder (e.g., if adding a new how-to guide, update the landing page `docs/how-to/landing-page.md`). 
+- When adding new page, update the "Contents" section of `docs/index.md` with a new entry for the page.
+
+## Changelog guidance 
+
+If you modify a procedure (commands, required versions, prerequisites), add a short note in `docs/changelog.md` summarizing the user-facing change.
