@@ -15,11 +15,11 @@ jobs:
       pull-requests: write
     steps:
       - name: Checkout Consumer Repo
-        uses: actions/checkout@v6
+        uses: actions/checkout@v6.0.1
 
       - name: Get Target Version
         id: config
-        uses: mikefarah/yq@v4
+        uses: mikefarah/yq@v4.49.2
         with:
           cmd: echo "CURRENT_VERSION=$(yq '.copilot.version' ${{ inputs.config_file }})" >> $GITHUB_OUTPUT
 
@@ -40,7 +40,7 @@ jobs:
 
       - name: Checkout Toolkit
         if: steps.upstream.outputs.UPDATE_NEEDED == 'true'
-        uses: actions/checkout@v6
+        uses: actions/checkout@v6.0.1
         with:
           repository: canonical/copilot-collections
           ref: ${{ steps.upstream.outputs.LATEST_VERSION }}
