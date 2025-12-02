@@ -84,11 +84,11 @@ The tutorial should contain the following pieces:
 
 ### Guidance on how-to guides
 
-How-to guides should contain a title with the format `# How to...`. The title should
+- How-to guides should contain a title with the format `# How to...`. The title should
 concisely summarize the real-world problem addressed by the document.
-
-How-to guides should contain at least one CLI command that user can run to address the
+- How-to guides should contain at least one CLI command that user can run to address the
 problem or achieve the goal.
+- Provide instructions or tasks that the user can take to achieve the goal. Avoid gerunds.
 
 ## Tests & CI
 
@@ -106,6 +106,7 @@ Run the docs linters via the top-level Makefile targets: `make docs-check` (this
 
 ## Small-edit rules for AI agents
 
+- Avoid describing tasks as "easy" or "simple".
 - Preserve existing link targets and code samples formatting. If you change any heading filename or path, update all relative links in `docs/` accordingly.
 - Do not change `docs/index.md` structure without updating the numeric Contents list — keep the order and paths in sync with files under `docs/`.
 - When adding a new page in one of the folders of `docs`, add a short entry in the landing page if there's a landing page in the folder (e.g., if adding a new how-to guide, update the landing page `docs/how-to/landing-page.md`). 
