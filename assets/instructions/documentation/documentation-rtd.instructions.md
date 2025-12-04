@@ -109,6 +109,31 @@ Run the docs linters via the docs-level Makefile targets:
 - **Headings**: Use sentence case for headings. Avoid punctuation in headings. Do not skip levels in heading hierarchy.
 - **Code examples**: Do not use prompt marks (for example, `$` or `#`) in code examples. Do not use comments in code examples; instead, put any comments directly into the text. Whenever possible, split up multiple commands into separate code blocks and provide explanations in between the code blocks. Use Git-flavoured Markdown with fenced code blocks (```) and command examples as shell blocks.
 
+## Admonitions
+
+Admonition directives are a standardized way of communicating different types of information. They should be used for tips, notes, warnings, and important information that the reader should not skip over or miss.
+
+For `*.md` files, admonitions are formatted in the following way:
+
+````
+```{note}
+A note.
+```
+````
+
+For `*.rst` files, admonitions are formatted in this way:
+
+```
+.. note::
+
+  A note.
+```
+
+Adhere to the following conventions:
+
+- Use admonitions sparingly in the documentation. Offer suggestions to remove admonitions when they are not necessary (for example, if the text is not necessary for the user to read). 
+- Only use the following types: `note`, `tip`, `warning`, `important`
+
 ## Small-edit rules for AI agents
 
 - Avoid describing tasks as "easy" or "simple".
