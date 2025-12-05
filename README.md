@@ -1,3 +1,8 @@
+<!--
+  ~ Copyright 2025 Canonical Ltd.
+  ~ See LICENSE file for licensing details.
+-->
+
 # **Canonical Copilot Collections**
 
 **Centralized context management for GitHub Copilot across the Canonical ecosystem.**
