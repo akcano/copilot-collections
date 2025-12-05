@@ -4,7 +4,7 @@ on:
     inputs:
       config_file:
         description: "Path to configuration file"
-        default: ".collections-config.yaml"
+        default: ".copilot-collections.yaml"
         type: string
 
 jobs:

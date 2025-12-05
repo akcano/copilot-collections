@@ -22,7 +22,7 @@ To add Copilot collections to your repository, follow these three steps.
 
 ### **1. Create the Configuration**
 
-Create a file named `.collections-config.yaml` in the root of your repository.
+Create a file named `.copilot-collections.yaml` in the root of your repository.
 
 ```yaml
 copilot:  
@@ -63,7 +63,7 @@ jobs:
     # Always pin to @main to get the latest logic, but the content version is controlled by your .yaml file  
     uses: canonical/copilot-collections/.github/workflows/auto_update_collections.yaml@main  
     with:  
-      config_file: ".collections-config.yaml"  
+      config_file: ".copilot-collections.yaml"  
     secrets: inherit
 ```
 

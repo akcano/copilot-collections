@@ -7,7 +7,7 @@ BLUE='\033[0;34m'
 RED='\033[0;31m'
 NC='\033[0m' # No Color
 
-CONFIG_FILE=".collections-config.yaml"
+CONFIG_FILE=".copilot-collections.yaml"
 TOOLKIT_REPO="https://github.com/canonical/copilot-collections.git"
 TEMP_DIR="$(pwd)/copilot-toolkit-temp"
 
