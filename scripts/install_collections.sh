@@ -1,7 +1,8 @@
+#!/bin/bash
+
 # Copyright 2025 Canonical Ltd.
 # See LICENSE file for licensing details.
 
-#!/bin/bash
 set -e
 
 # Usage: ./install_collections.sh <path_to_config_yaml> <path_to_toolkit_root>

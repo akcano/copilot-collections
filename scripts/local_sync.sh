@@ -1,7 +1,8 @@
+#!/bin/bash
+
 # Copyright 2025 Canonical Ltd.
 # See LICENSE file for licensing details.
 
-#!/bin/bash
 set -e
 
 # Colors for output
