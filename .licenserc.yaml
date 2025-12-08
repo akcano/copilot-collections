@@ -18,4 +18,5 @@ header:
     - 'LICENSE'
     - 'trivy.yaml'
     - 'assets/**'
+    - 'groups/**'
   comment: on-failure
