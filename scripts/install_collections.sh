@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Copyright 2025 Canonical Ltd.
+# Copyright 2026 Canonical Ltd.
 # See LICENSE file for licensing details.
 
 set -e
@@ -54,6 +54,13 @@ while read -r manifest_path; do
         rm "${manifest_path}.tmp"
     fi
 done < <(find "$TOOLKIT_DIR" -name "collections.yaml")
+
+if [ ! -s "$MERGED_MANIFEST" ]; then
+    echo "❌ Error: No collection manifests found in '$TOOLKIT_DIR'."
+    echo "   Ensure the second argument points to the toolkit root (containing collections.yaml)."
+    rm "$MERGED_MANIFEST"
+    exit 1
+fi
 
 # 3. Parse Collections from Config
 COLLECTIONS_LIST=$(yq '.copilot.collections[]' "$CONFIG_FILE" | tr '\n' ' ')
