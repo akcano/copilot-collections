@@ -7,6 +7,11 @@
                  conventions, terminology, and project-specific patterns.
 ```
 
+<!--
+  ~ Copyright 2026 Canonical Ltd.
+  ~ See LICENSE file for licensing details.
+-->
+
 # Documentation style guide
 
 This style guide documents the established conventions used in the project documentation. It captures actual patterns observed across the documentation set and serves as a reference for maintaining consistency in new contributions.

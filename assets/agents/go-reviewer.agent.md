@@ -1,3 +1,8 @@
+---
+name: Golang Code Review Agent
+description: Evaluates code changes for correctness, style adherence, architecture alignment, testing coverage, and documentation completeness
+---
+
 <!--
   ~ Copyright 2026 Canonical Ltd.
   ~ See LICENSE file for licensing details.

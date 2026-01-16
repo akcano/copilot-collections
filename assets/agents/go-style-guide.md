@@ -7,6 +7,11 @@
                  principles derived from PR discussions and contribution standards.
 ```
 
+<!--
+  ~ Copyright 2026 Canonical Ltd.
+  ~ See LICENSE file for licensing details.
+-->
+
 # Go coding style guide
 
 This style guide documents Go-specific coding conventions used in the project. It captures patterns from code review discussions in merged PRs and established project standards. These guidelines complement general coding standards for your organization with project-specific decisions.

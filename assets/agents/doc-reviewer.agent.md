@@ -1,7 +1,13 @@
+---
+name: Documentation Review Agent
+description: Technical documentation reviewer and editor applying the Diátaxis framework
+---
+
 <!--
   ~ Copyright 2026 Canonical Ltd.
   ~ See LICENSE file for licensing details.
 -->
+
 # Documentation Review Agent
 
 ## Persona
